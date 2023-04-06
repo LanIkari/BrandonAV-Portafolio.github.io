@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 html, body {
@@ -13,16 +12,17 @@ html, body {
 }
 
 #particles {
+  position:static;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   background: linear-gradient(to bottom, #6d01fa 50%, #000000 90%);
   
 }
 
 #intro {
   
-  position: absolute ;
+  position: fixed ;
   left: 0;
   top: 50%;
   padding: 0 10px;
@@ -48,41 +48,80 @@ i{
   font-size: 4em;
 
 }
+i:hover{   
+  font-size: 5em;
+}
+
 /* !END SECTION PARTICLES */
 
 /* *SECTION HEADER */
 header{
   position: relative;
   background-color: #000000;
-  padding: 50px;
+  background-size: cover;
+  background-position: center;
 }
-
- h3{
-  display: inline;
-  position: relative;
-  margin: 0 auto;
-  font-size: 4.5em;
+.nav{
+  width: 100%;
+ display: flex; 
+ align-items: center;
+ justify-content: space-between;
+ padding: 50px;
+ transition: all 0.5s ease;
+}
+.nav.active{
+  position: fixed;
+  background: #ffffff;
+  padding: 15px;
+}
+.nav.active .logo{
+  color: #fff;
+}
+.nav.active a{
   color: #ffffff;
-  
 }
-h3:hover{
-  text-transform: uppercase;
-  color:#09fa01;
-  font-size: 5em;
-
+.nav.active a:hover{
+  background: #ffffff;
 }
 
-#barrs{
-  display: inline;
-  color:#ffffff;
-  font-size: 4em;
-  margin: 0 0 0 15px;
+.logo{
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+
+}
+.menu{
+  display: flex;
+}
+.menu li{
+  list-style: none;
+  margin: 30px;
+}
+.menu li a{
+  font-size: 2em;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.menu li a:hover{
+  padding: 5px 10px;
+  color: #fa5001;
+  background: #ffffff;
+  border-radius: 15px;
+}
+.logo:hover{
+  padding: 10px 10px;
+  color: #fa5001;
+  background: #ffffff;
+  border-radius: 15px;
+  transition: 0.5s ease;
+}
+.scrol{
+  height: 0px;
 }
 
-nav ul{
-  display: none;
-  color:#ffffff
-}
 
 
 /* !END SECTION HEADER */
@@ -107,3 +146,4 @@ main{
   margin-bottom: 10px;
   color: #ffffff;
 }
+
