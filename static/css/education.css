@@ -86,7 +86,7 @@ p {
 }
 
 .program__name{
-	margin-right: 20px;
+	margin-right:10px;
 	font-size: 35px;
 	font-weight: normal;
     color: #fd9329;
@@ -101,12 +101,9 @@ p {
 	line-height: 30px;
 }
 
-
-
-
 .foto {
 	width: 42%;
-	border: 10px solid #fff;
+	border: 10px solid #c9c9c9;
 	position: relative;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -115,7 +112,7 @@ p {
 	content: "";
 	display: block;
 	border: 20px solid transparent;
-	border-left: 20px solid #fff;
+	border-left: 20px solid #c9c9c9;
 	position: absolute;
 	right: -50px;
 	top: calc(50% - 20px);
@@ -137,7 +134,7 @@ p {
 .evento:nth-child(even) .foto::after {
 	content: "";
 	border: 20px solid transparent;
-	border-right: 20px solid #fff;
+	border-right: 20px solid #c9c9c9;
 	right: initial;
 	left: -50px;
 }
