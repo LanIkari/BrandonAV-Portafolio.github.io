@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@1,100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +12,7 @@ body {
   overflow: auto;
   overflow-x: hidden;
   background-color: #000000;
+  font-family: "Inconsolata";
 }
 
 #particles {
@@ -33,10 +34,11 @@ body {
 }
 
 h1 {
-  font-family: "Lora";
+  font-family: "Inconsolata";
+  text-decoration: bold;
   font-weight: 10;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 120;
   color: #ffffff;
   letter-spacing: 0.05em;
@@ -85,44 +87,47 @@ header {
   font-size: 1.5em;
   color: #ffffff;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 25px;
+}
+.menu .numbers {
+  margin: 0;
+  color: #fd9329;
 }
 
-.menu li a:hover{
-  color: #fa01c4;
-  
+.menu li a:hover {
+  color: #fd9329;
 }
-
 
 /* CSS */
 .CV {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #373B44;
-  
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #ffff;
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
-  outline-offset: .6em;
+  outline-offset: 0.6em;
   font-size: 16px;
-
   border: 0;
-
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
 .CV:hover,
-.CV:focus-visible{
+.CV:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 
 .CV:active {
@@ -130,46 +135,93 @@ header {
   color: #fff;
 }
 
-
 /* !END SECTION HEADER */
 
 /* *SECTION MAIN ME*/
 main {
   position: relative;
   padding: 60px;
-  background-color: #000000;
 }
 
-.me{
-  display : flex;
-  width: 100%;
+.me {
+  display: flex;
+  justify-content: space-around;
+  width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
-.bio h2 {
+.bio {
+  width: 570px;
+  margin-right: 30px;
+}
+
+.about-me-title {
   font-family: "Inconsolata";
   font-size: 3.5em;
   color: #ffffff;
   margin-bottom: 15px;
-  
+  position: relative;
+  width: fit-content;
+}
+
+.about-me-title::before {
+  content: "01.";
+  color: #fd9329;
+}
+
+.about-me-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #5a4ddf;
+  height: 1px;
+  width: 250px;
+  top: 50%;
+  right: -250px;
 }
 
 .bio p {
-  font-family: "Roboto", sans-serif;;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   color: #ffffff;
-  width: 93%;
-  text-align: justify;
   line-height: 25px;
-
-
 }
 
-.img .bio__img{
-  width: 480px;
-  margin-right: 50px;
-  margin-top: 20px;
-  border-radius: 2%;
+.img {
+  width: auto;
+  height: auto; 
+  margin-top: 0px;
+}
+
+.bio__img {
+  width: 424px;
+}
+
+.img {
+  --color: #5347d5; /* the border color */
+  --border: 2px;   /* the border thickness*/
+  --offset: 20px;   /* control the offset*/
+  --gap: 5px;       /* the gap on hover */
   
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+  --_o: calc(3*var(--offset));
+  padding: 
+    calc(var(--gap) + var(--border))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border));
+  background: 
+    linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+    linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+  background-repeat: no-repeat;
+  filter: grayscale(.4);
+  transition: .5s;
+  cursor: pointer;
 }
-
-/* *SECTION MAIN ME*/
+.img:hover {
+  background-position: 0px 0px;
+  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+  filter: grayscale(0);
+}
