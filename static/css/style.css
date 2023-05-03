@@ -221,3 +221,25 @@ main {
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
   filter: grayscale(0);
 }
+
+@media only screen and (max-width: 1000px){
+  #particles {
+    width: 117%;
+    height: 117%;
+  }
+  .nav {
+    width: 117%;
+  }
+  img {
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+  }
+  .bio p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 25px;
+  }
+
+}
