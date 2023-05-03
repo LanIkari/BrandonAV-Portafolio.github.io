@@ -3,13 +3,15 @@
 
 <head>
         <meta charset="UTF-8" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="static/css/reset.css">
         <link rel="stylesheet" href="static/css/style.css" />
         <link rel="stylesheet" href="static/css/education.css" />
+        <link rel="stylesheet" href="static/css/proyectos.css" />
         <script src="https://kit.fontawesome.com/823b01c063.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="static/js/jquery.particleground.js"></script>
         <script type="text/javascript" src="static/js/demo.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link rel="icon" type="text" href="static/img/怒.png">
         <title>Brandon A.V</title>
 </head>
@@ -17,16 +19,17 @@
 <body>
         <div id="particles">
                 <div id="intro" data-aos="fade-down">
-                        <ul>
+                        <lo>
                                 <h1>Brandon Avendaño Villegas</h1>
-                                <a href="https://www.linkedin.com/in/brandon-avendaño-villegas/"><i
-                                                class="fa-brands fa-linkedin-in"></i>
-                                        <a href="https://www.facebook.com/BrandonAvendanoVillegas/"><i
-                                                        class="fa-brands fa-instagram"></i></a>
-                                        <a href="https://github.com/LanIkari/"><i class="fab fa-github"></i></a>
-                                        <a href="https://twitter.com/Brandon_Ikari/"><i
-                                                        class="fa-brands fa-twitter"></i></a>
-                        </ul>
+                                <a href="https://www.linkedin.com/in/brandon-avendaño-villegas/" target="_blank"><i
+                                                class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com/LanIkari/" target="_blank"><i
+                                                class="fa-brands fa-square-github"></i></a>
+                                <a href="https://twitter.com/Brandon_Ikari/" target="_blank"><i
+                                                class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/lan_ikari/" target="_blank"><i
+                                                class="fa-brands fa-square-instagram"></i></a>
+                        </lo>
                 </div>
 
         </div>
@@ -36,17 +39,17 @@
                 <nav class="nav">
                         <a href="#" class="logo">怒</a>
                         <ul class="menu">
-                                <li> <a class="numbers">01.</a><a href="#">Sobre mi</a></li>
-                                <li> <a class="numbers">02.</a><a href="education">Educacion</a></li>
-                                <li> <a class="numbers">03.</a><a href="#">Proyectos</a></li>
-                                <li> <a class="numbers">04.</a><a href="#">Contacto</a></li>
-                                <li><a href="#" class="CV">CV</a></li>
+                                <li> <a class="numbers">01.</a><a href="#sobre_mi">Sobre mi</a></li>
+                                <li> <a class="numbers">02.</a><a href="#educacion">Educacion</a></li>
+                                <li> <a class="numbers">03.</a><a href="#proyectos">Proyectos</a></li>
+                                <li> <a class="numbers">04.</a><a href="#contacto">Contacto</a></li>
+                                <li> <a href="static/doc/CV-2023.pdf" download="CV-2023" class="CV">CV</a></li>
                         </ul>
                 </nav>
         </header>
-        3
+
         <main>
-                <section class="me">
+                <section class="me" id="sobre_mi">
                         <div class="bio">
                                 <h2 class="about-me-title">Sobre mi</h2>
                                 <p>¡Hola! Soy Brandon un entusiasta de la tecnologia e inovacion y disfruto creando
@@ -70,7 +73,7 @@
                         </div>
                 </section>
 
-                <section class="educacion">
+                <section class="educacion" id="educacion">
                         <div class="trayecto">
                                 <h3 class="education-title">Educacion</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolor ab voluptatem
@@ -87,35 +90,35 @@
                         </div>
 
                         <div class="time-line">
-
                                 <div class="evento">
-                                        <div class="foto">
-                                                <a href="http://ingenieria.aragon.unam.mx/"><img
+                                        <div class="foto" data-aos="fade-right">
+                                                <a href="http://ingenieria.aragon.unam.mx/" target="_blank"><img
                                                                 src="static/img/Fes_Aragon.jpg" alt="Fes Aragon"></a>
                                         </div>
+
                                         <div class="program">
                                                 <p class="program__name">Ingeneria en Computacion</p>
-                                                <p class="program__date"> 8 de Agosto de 2018 - Actualidad</p>
+                                                <p class="program__date"> 8 de Agosto de 2018 - 6 de Diciembre del 2022</p>
                                         </div>
                                 </div>
 
                                 <div class="evento">
-                                        <div class="foto">
-                                                <a
-                                                        href="https://news.microsoft.com/es-xl/la-iniciativa-launch-x-latam-ayuda-a-los-jovenes-latinoamericanos-a-certificarse-como-desarrolladores-y-potenciar-sus-oportunidades-laborales/"><img
-                                                                src="static/img/LaunchX.jpg" alt="LaunchX"></a>
+                                        <div class="foto" data-aos="fade-left">
+                                                <a href="https://news.microsoft.com/es-xl/la-iniciativa-launch-x-latam-ayuda-a-los-jovenes-latinoamericanos-a-certificarse-como-desarrolladores-y-potenciar-sus-oportunidades-laborales/"
+                                                        target="_blank"><img src="static/img/LaunchX.jpg"
+                                                                alt="LaunchX"></a>
                                         </div>
                                         <div class="program">
                                                 <p class="program__name"> Microsoft Launch X</p>
-                                                <p class="program__date"> 23 de Septiembre del 2022 - 18 de Dicimebre
-                                                        2022</p>
+                                                <p class="program__date"> 23 de Septiembre del 2022 - 18 de Dicimebre del 2022</p>
                                         </div>
                                 </div>
 
                                 <div class="evento">
-                                        <div class="foto">
-                                                <a href="https://www.oracle.com/mx/education/oracle-next-education/"><img
-                                                                src="static/img/OracleONE.jpg" alt="ONE"></a>
+                                        <div class="foto" data-aos="fade-right">
+                                                <a href="https://www.oracle.com/mx/education/oracle-next-education/"
+                                                        target="_blank"><img src="static/img/OracleONE.jpg"
+                                                                alt="ONE"></a>
                                         </div>
                                         <div class="program">
                                                 <p class="program__name">Oracle Next Education</p>
@@ -123,24 +126,49 @@
                                         </div>
                                 </div>
 
+                                <div class="evento">
+                                        <div class="foto" data-aos="fade-left">
+                                                <a href="https://becas.inroads.org.mx/" target="_blank"><img
+                                                                src="static/img/Google.png" alt="INROADS"></a>
+                                        </div>
+                                        <div class="program">
+                                                <p class="program__name">Analisis de Datos de Google</p>
+                                                <p class="program__date">25 Agosto del 2022 - 28 de Marzo del 2023</p>
+                                        </div>
+                                </div>
                         </div>
                         </div>
+                </section>
+
+                <section class="proyectos" id="proyectos">
+                        <div class="porafolio">
+                                <h3 class="portafolio-title">Proyectos</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolor ab voluptatem
+                                        in?
+                                        Atque, quos eaque eligendi quam blanditiis suscipit adipisci ad quasi non
+                                        mollitia
+                                        corporis debitis iste illo harum!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsa doloremque
+                                        officiis.
+                                        Est ex quo ea nobis molestiae! Delectus minima accusamus quisquam fuga possimus
+                                        laboriosam quos id soluta, quo dolorum.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum ipsa illo
+                                </p>
+                        </div>
+
                 </section>
         </main>
 
         <footer>
 
         </footer>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
                 AOS.init({
-                        offset: 400,
                         duration: 1000,
                         easing: 'ease-in-out',
                         delay: 100,
-                        once: true,
+                        mirror: false,
                 });
-
         </script>
 </body>
 

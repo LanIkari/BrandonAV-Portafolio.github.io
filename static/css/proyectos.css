@@ -1,0 +1,37 @@
+.proyectos {
+    display:  block;/**Corregir el espacio en la line del tiempo */
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+  
+  h3 {
+    font-family: "Inconsolata";
+    font-size: 3.5em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    position: relative;
+    width: fit-content;
+  }
+  .portafolio-title::before {
+    content: "03.";
+    color: #fd9329;
+  }
+  
+  .portafolio-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #5347d5;
+    height: 1px;
+    width: 700px;
+    top: 50%;
+    right: -710px;
+  }
+  
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    line-height: 25px;
+  }

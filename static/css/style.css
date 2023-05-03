@@ -9,8 +9,6 @@ html,
 body {
   max-width: 100%;
   height: 100%;
-  overflow: auto;
-  overflow-x: hidden;
   background-color: #000000;
   font-family: "Inconsolata";
 }
@@ -19,7 +17,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background: linear-gradient(to bottom, #6d01fa 50%, #000000 90%);
 }
 
@@ -30,7 +27,6 @@ body {
   padding: 0 10px;
   width: 100%;
   text-align: center;
-  overflow: hidden;
 }
 
 h1 {
@@ -42,13 +38,13 @@ h1 {
   font-weight: 120;
   color: #ffffff;
   letter-spacing: 0.05em;
-  margin: 10px;
+  margin-bottom: 20px;
 }
 
 i {
   margin: 0 5px;
   color: #ffffff;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 /* !END SECTION PARTICLES */
@@ -57,7 +53,7 @@ i {
 header {
   position: relative;
   background-color: #000000;
-  background-size: cover;
+
   background-position: center;
 }
 .nav {
@@ -216,7 +212,7 @@ main {
     linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
   background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
   background-repeat: no-repeat;
-  filter: grayscale(.4);
+  filter: grayscale(1);
   transition: .5s;
   cursor: pointer;
 }
