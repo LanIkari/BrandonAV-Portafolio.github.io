@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&family=Martel:wght@200&family=Noticia+Text&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -178,16 +179,16 @@ main {
 }
 
 .bio p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-family: "Martel", serif;
+  font-size: 1.2em;
   color: #ffffff;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 .img {
   width: auto;
-  height: auto; 
-  margin-top: 0px;
+  height: auto;
+  margin-top: 85px;
 }
 
 .bio__img {
@@ -196,24 +197,23 @@ main {
 
 .img {
   --color: #5347d5; /* the border color */
-  --border: 2px;   /* the border thickness*/
-  --offset: 20px;   /* control the offset*/
-  --gap: 5px;       /* the gap on hover */
-  
-  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
-  --_o: calc(3*var(--offset));
-  padding: 
-    calc(var(--gap) + var(--border))
+  --border: 2px; /* the border thickness*/
+  --offset: 20px; /* control the offset*/
+  --gap: 5px; /* the gap on hover */
+
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),
+    var(--color) 0;
+  --_o: calc(3 * var(--offset));
+  padding: calc(var(--gap) + var(--border))
     calc(var(--gap) + var(--border) + var(--offset))
     calc(var(--gap) + var(--border) + var(--offset))
     calc(var(--gap) + var(--border));
-  background: 
-    linear-gradient(      var(--_c)) var(--_o) var(--_o), 
-    linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+  background: linear-gradient(var(--_c)) var(--_o) var(--_o),
+    linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
   background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
   background-repeat: no-repeat;
   filter: grayscale(1);
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 .img:hover {
@@ -222,7 +222,7 @@ main {
   filter: grayscale(0);
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
   #particles {
     width: 117%;
     height: 117%;
@@ -230,16 +230,37 @@ main {
   .nav {
     width: 117%;
   }
-  img {
+  .me {
+    display: inline-block;
+  }
+  .bio {
+    width: 1024px;
+  }
+  .about-me-title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .about-me-title::after {
+    width: 670px;
+    right: -680px;
+  }
+  .img {
+    width: 800px;
+    margin-left: 130px;
+  }
+  .bio__img {
     width: auto;
     height: auto;
-    margin-top: 0px;
+  }
+  .img:hover {
+    background-position: 0px 0px;
+    background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+    filter: grayscale(0);
   }
   .bio p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1em;
+    font-family: "Martel", serif;
+    font-size: 0.7em;
     color: #ffffff;
     line-height: 25px;
   }
-
 }

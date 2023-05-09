@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@1,100&display=swap");
+
 .educacion {
-  display:  block;/**Corregir el espacio en la line del tiempo */
+  display: block; /**Corregir el espacio en la line del tiempo */
   width: 1024px;
   margin: 0 auto;
   margin-top: 150px;
@@ -29,116 +31,131 @@ h3 {
   right: -710px;
 }
 
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+.trayecto p {
+  font-family: "Martel", serif;
+  font-size: 1.3em;
   color: #ffffff;
-  line-height: 25px;
+  line-height: 30px;
 }
 
-.time-line{
-	width: 90%;
-	max-width: 1200px;
-	margin: 100px auto;
-	display: flex;
-	flex-direction: column;
-	position: relative;
+.time-line {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .time-line::after {
-	content: "";
-	width: 2px;
-	height: 100%;
-	background:#5347d5;
-	position: absolute;
-	top: 0;
-	left: calc(50% - 1px);
-	box-shadow: 0 0 15px #7a72d8;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #5347d5;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  box-shadow: 0 0 15px #7a72d8;
 }
 
-
 .evento {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 200px;
-	position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+  position: relative;
 }
 
 .evento::after {
-	content: "";
-	display: block;
-	width: 14px;
-	height: 14px;
-	border-radius: 100px;
-	background: #DCDFD9;
-	border: 2px solid #1b3231;
-	position: absolute;
-	z-index: 2;
-	top: calc(50% - 9px);
-	left: calc(50% - 9px);
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  background: #dcdfd9;
+  border: 2px solid #1b3231;
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 9px);
+  left: calc(50% - 9px);
 }
 
 .program {
-	display: block;
-	position: relative;
-	align-items: center;
-	justify-content: start;
-	margin-top: 70px;
-	width: calc(42% + 20px);
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: start;
+  margin-top: 70px;
+  width: calc(42% + 20px);
 }
 
-.program__name{
-	font-family: "Inconsolata";
-	margin-bottom: 10px;
-	font-size: 30px;
-	font-weight: bold;
-    color: #fd9329;
-	line-height: 30px;
-	text-decoration: bold;
+.program__name {
+  font-family: "Noticia Text", serif;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #fd9329;
+  line-height: 30px;
+  text-decoration: bold;
 }
 
-.progran__date{
-	display: inline;
-	font-size: 10px;
-	font-weight: italic;
-    color: #fd9329;
-	line-height: 30px;
+.progran__date {
+  font-family: "Martel", serif;
+  display: inline;
+  font-size: 10px;
+
+  color: #fd9329;
+  line-height: 30px;
 }
 
 .foto {
-	width: 42%;
-	border: 10px solid #c9c9c9;
-	position: relative;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 42%;
+  border: 10px solid #c9c9c9;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .foto::after {
-	content: "";
-	display: block;
-	border: 20px solid transparent;
-	border-left: 20px solid #c9c9c9;
-	position: absolute;
-	right: -50px;
-	top: calc(50% - 20px);
+  content: "";
+  display: block;
+  border: 20px solid transparent;
+  border-left: 20px solid #c9c9c9;
+  position: absolute;
+  right: -50px;
+  top: calc(50% - 20px);
 }
 
 .foto img {
-	width: 100%;
-	vertical-align: top;
+  width: 100%;
+  vertical-align: top;
 }
 
 .evento:nth-child(even) {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .evento:nth-child(even) .program {
-	justify-content: end;
+  justify-content: end;
 }
 
 .evento:nth-child(even) .foto::after {
-	content: "";
-	border: 20px solid transparent;
-	border-right: 20px solid #c9c9c9;
-	right: initial;
-	left: -50px;
+  content: "";
+  border: 20px solid transparent;
+  border-right: 20px solid #c9c9c9;
+  right: initial;
+  left: -50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .education-title {
+    margin-bottom: 50px;
+  }
+  .education-title::after {
+    width: 620px;
+    right: -640px;
+  }
+  .trayecto p {
+	font-family: "Martel", serif;
+	font-size: 0.7em;
+	color: #ffffff;
+	line-height: 25px;
+  }
 }
