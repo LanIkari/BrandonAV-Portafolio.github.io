@@ -125,6 +125,7 @@ header {
   --_p: 0px;
   outline-color: var(--color);
   outline-offset: 0.05em;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .CV:active {
@@ -220,6 +221,7 @@ main {
   background-position: 0px 0px;
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
   filter: grayscale(0);
+  transform: translate(-15px, -15px);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -246,20 +248,22 @@ main {
   }
   .img {
     width: 800px;
-    margin-left: 130px;
+    margin-left: 120px;
   }
   .bio__img {
     width: auto;
-    height: auto;
   }
   .img:hover {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
     background-position: 0px 0px;
     background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
     filter: grayscale(0);
+    transform: translate(-15px, -15px);
   }
   .bio p {
     font-family: "Martel", serif;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: #ffffff;
     line-height: 25px;
   }
