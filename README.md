@@ -19,7 +19,7 @@
 * HTML 💀
 
 ## Color Reference 🎨
-<p align="center">
+
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
 | Neon Green     | ![#09fa01](https://via.placeholder.com/10/09fa01?text=+) `#09fa01` |
@@ -28,7 +28,7 @@
 | Pastel Purple  | ![#7a72d8](https://via.placeholder.com/10/7a72d8?text=+) `#7a72d8` |
 | Black          | ![#000000](https://via.placeholder.com/10/000000?text=+) `#000000` |
 | White          | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) `#ffffff` |
-</p>
+
 
 ## Autor :fountain_pen:
 
