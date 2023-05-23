@@ -1,6 +1,6 @@
 
 <p align="center">
-<a href=""> <img src="static\img\Portfolio-Port.png" alt="alura" style="" ></a>
+<a href=""> <img src="static/img/Portfolio-Port.png" alt="alura" style="" ></a>
 </p>
 
 # Portafolio 💼
@@ -34,7 +34,7 @@
 
 <p align="center">
   <a href="https://lanikari.github.io/BrandonAV-Portfolio/" target="_blank">
-  <img width="100px" src="static\img\怒.png" alt="Checkly" />
+  <img width="100px" src="static/img/怒.png" alt="Ikari" />
   </a>
   <br />
   <i><sub>Designed & Built by Brandon Avendaño Villegas</sub></i>
