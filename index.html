@@ -5,16 +5,29 @@
         <meta charset="UTF-8" />
         <title>Brandon A.V</title>
         <link rel="icon" type="text" href="static/img/怒.png">
+        <!-- SEO  OG-->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://lanikari.github.io/BrandonAV-Portfolio/">
         <meta property="og:title" content="Brandon A.V - Dev Portfolio 💼">
+        <meta property="og:image" content="static\img\Portfolio-Port.png">
         <meta property="og:description"
                 content="¡Hola!👋 Soy Brandon Avendaño Villegas un ingeniero especializado en el desarrollo de software 👨‍💻, te invito a conocerme y conocer mi trabajo 🛠️.">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="og:url" content="https://lanikari.github.io/BrandonAV-Portfolio/">
-        <meta property="og:type" content="portfolio">
+        <!-- END SEO OG-->
+
+        <!-- SEO  Twitter-->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://lanikari.github.io/BrandonAV-Portfolio/">
+        <meta property="twitter:title" content="Brandon A.V - Dev Portfolio 💼">
+        <meta property="twitter:image" content="static\img\Portfolio-Port.png">
+        <meta property="twitter:description"
+                content="¡Hola!👋 Soy Brandon Avendaño Villegas un ingeniero especializado en el desarrollo de software 👨‍💻, te invito a conocerme y conocer mi trabajo 🛠️.">
+        <!-- END SEO Twitter-->
+
         <link rel="stylesheet" href="static/css/reset.css">
         <link rel="stylesheet" href="static/css/style.css" />
         <link rel="stylesheet" href="static/css/education.css" />
         <link rel="stylesheet" href="static/css/proyectos.css" />
+        <link rel="stylesheet" href="static/css/contacto.css" />
         <script type="text/javascript" src="static/js/demo.js"></script>
         <script type="text/javascript" src="static/js/jquery.particleground.js"></script>
         <script src="https://kit.fontawesome.com/823b01c063.js" crossorigin="anonymous"></script>
@@ -271,6 +284,55 @@
 
                         </div>
 
+                </section>
+
+                <section class="contacto" id="contacto">
+                        <div class="formulario">
+                                <h3 class="contacto-number">04.</h3>
+                                <h3 class="contacto-title">Contacto</h3>
+                                <div class="container" data-aos="zoom-out">
+                                        <form action="https://formsubmit.co/brandon.av.vi@outlook.com" method="POST" id="contact_form">
+                                                <div class="name">
+                                                        <label for="name"></label>
+                                                        <input type="text" placeholder="My nombre es" name="name"
+                                                                id="name_input" required>
+                                                </div>
+                                                <div class="email">
+                                                        <label for="email"></label>
+                                                        <input type="email" placeholder="Mi e-mail es" name="email"
+                                                                id="email_input" required>
+                                                </div>
+                                                <div class="telephone">
+                                                        <label for="name"></label>
+                                                        <input type="text" placeholder="Mi numero es" name="telephone"
+                                                                id="telephone_input" required>
+                                                </div>
+                                                <div class="subject">
+                                                        <label for="subject"></label>
+                                                        <select placeholder="Subject line" type="text" name="subject" 
+                                                                id="subject_input" required>
+                                                                <option disabled hidden selected>Asunto</option>
+                                                                <option>Me gustaría iniciar un proyecto</option>
+                                                                <option>Me gustaría hacer una pregunta</option>
+                                                                <option>Me gustaría hacer una propuesta</option>
+                                                        </select>
+                                                </div>
+                                                <div class="message">
+                                                        <label for="message"></label>
+                                                        <textarea name="message" placeholder="Me gustaría hablar sobre"
+                                                                id="message_input" cols="30" rows="5"
+                                                                required></textarea>
+                                                </div>
+                                                <div class="submit">
+                                                        <input type="submit" value="Enviar mensaje" id="form_button" />
+                                                </div>
+                                                <input type="hidden" name="_next" value="https://lanikari.github.io/BrandonAV-Portfolio/">
+                                                <input type="hidden" name="_captcha" value="false"/>
+                                        </form><!-- // End form -->
+                                </div>
+                        </div><!-- // End #container -->
+                        </div>
+                        </div>
                 </section>
         </main>
         <footer>
