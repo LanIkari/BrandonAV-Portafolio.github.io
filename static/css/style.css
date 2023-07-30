@@ -7,11 +7,24 @@
 
 html,
 body {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   background-color: #000000;
   font-family: "Inconsolata";
 }
+
+#ikari-svg{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background-color: #000000;
+}
+
 
 #particles {
   position: relative;
@@ -51,8 +64,6 @@ i {
 /* *SECTION HEADER */
 header {
   position: relative;
-  background-color: #000000;
-
   background-position: center;
 }
 .nav {
@@ -71,12 +82,20 @@ header {
   text-decoration: none;
   margin-left: 10px;
 }
+
 .menu {
   display: flex;
+  background: hsla(0, 0%, 100%, 0.041);
+  backdrop-filter: blur(2em);
+  z-index: 3;
+}
+.mobile-nav-toggle{
+  display: none;
+  
 }
 .menu li {
   list-style: none;
-  margin: 8px;
+  margin: 30px;
 }
 .menu li a {
   font-size: 1.5em;
@@ -223,12 +242,64 @@ main {
 }
 
 @media only screen and (max-width: 1000px) {
+  #ikari-svg{
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    background-color: #000000;
+  }
+
   #particles {
     width: 117%;
     height: 117%;
   }
   .nav {
     width: 117%;
+  }
+
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    inset: 0 0 0 35%;
+    padding: min(30vh,10rem) 2em;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 0.1);
+    backdrop-filter: blur(1em);
+    font-size: 2.5em;
+    z-index: 999;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .menu[data-visible="true"] {
+    transform: translate(0%);
+  }
+  .logo{
+    font-size: 6em;
+  }
+  .menu li {
+    margin: 2em;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    background: url('../img/menu.png') no-repeat center center/cover;
+    width: 6em;
+    filter: invert(100%) sepia(0%) saturate(14%) hue-rotate(294deg) brightness(105%) contrast(100%);
+    border: 0;
+    aspect-ratio: 1;
+    top: 4.2em;
+    right: -8em;
+  }
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background: url('../img/close.png') no-repeat center center/cover;
+    width: 10em;
+    top: 2em;
+    right: -10em;
   }
   .me {
     display: inline-block;

@@ -22,7 +22,6 @@ h3 {
 }
 .container {
   border: solid 3px #ffffff;
-  max-width: 768px;
   margin: 60px auto;
   position: relative;
 }
@@ -175,45 +174,33 @@ textarea {
   color: #f2f3eb;
 }
 
-@media screen and (max-width: 768px) {
-  #container {
+@media only screen and (max-width: 1000px) {
+  .container {
     margin: 20px auto;
-    width: 95%;
+    width: 900px;
+    height: 1100px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 26px;
+  .name{
+    width: 100%;
+    font-size: 2.5em;
   }
-
-  .underline {
-    width: 68px;
+  .email{
+    width: 100%;
+    font-size: 2.5em;
   }
-
-  #form_button {
-    padding: 15px 25px;
+  .telephone{
+    width: 100%;
+    font-size: 2.5em;
   }
-}
-
-@media screen and (max-width: 420px) {
-  h1 {
-    font-size: 18px;
+  .subject{
+    width: 100%;
+    font-size: 2.5em;
   }
-
-  .icon {
-    height: 35px;
-    width: 35px;
+  .message{
+    width: 100%;
+    font-size: 2.5em;
   }
-
-  .underline {
-    width: 53px;
-  }
-
-  input[type="text"],
-  [type="email"],
-  select,
-  textarea {
-    font-size: 0.875em;
+  #form_button{
+    font-size: 2.5em;
   }
 }
